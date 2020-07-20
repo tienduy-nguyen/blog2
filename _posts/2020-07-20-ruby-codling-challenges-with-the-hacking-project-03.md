@@ -44,7 +44,7 @@ Now, we will go to solve the challenge.
   :arrow_right:  My solution: 
 
   - It becomes more complicated with the 5kyu level. I take me more time to reach the best solution what I can.
-  - One thing that we need pay attention here is how to convert a character to the ascii caracter.
+  - To do this challenge
 
   ```ruby
   def rot13(str)
@@ -107,14 +107,58 @@ Now, we will go to solve the challenge.
   ```
 
   :arrow_right:  My solution: 
+  - I struggled to find an short and better solution for this challenge.
+  - Finally I did a quite long solution.
+  - So my idea is create an dictionary rules contains all case points of numbers. I convert it to string. For example: 31 means three 1's.
+  - Then I took some steps to convert the input array to an array with the same format of rules: new_array
+  - Loop through new_array, check with the rules to solve the sum
 
-  - Very simple here if we know already the set operation method of array in ruby
-  ```
-  union = A | B
-  isect = A & B
-  diff1  = A - B
-  diff2  = B - A
-  sdiff = (A - B) | (B - A)
+  ```ruby
+  def score(dice)
+    rules = {"31"=>1000,
+      "36"=>600,
+      "35"=>500,
+      "34"=>400,
+      "33"=>300,
+      "32"=>200,
+      "11"=>100,
+      "21"=>200,
+      "41"=>1100,
+      "51"=>1200,
+      "15"=>50,
+      "25"=>100,
+      "45"=>550,
+      "55"=>600
+    }
+
+    arr_uniq=dice.uniq
+
+    # Create a hash {"1" => 0, "2" =>0 ...}
+    check = arr_uniq.zip(Array.new(arr_uniq.size,0)).to_h
+
+    # Count the number of dice array and set it in the check hash
+    arr = dice.each do |num|
+      if check.key?(num)
+        check[num] += 1
+      end
+    end
+
+    # Convert the hash to an array with the same format of rules
+    new_arr =[]
+    check.each {|k,v| 
+      new_arr.push(v.to_s+k.to_s)
+    }
+
+    # solve the sum
+    sum = 0
+    new_arr.each do |item|
+      if rules.key?(item)
+        sum += rules[item]
+      end
+    end
+    return sum
+  end
+
   ```
 :heavy_check_mark: Best solution on codewars
 
@@ -159,6 +203,8 @@ Now, we will go to solve the challenge.
   ```
   I take more 2 solutions of coderwars for this challenge because each solution give an each different way to solve this interesting kata.
 
+  I love the first solution because it is the same idea as I thought. But they use an excelent method. The code is very elegent and readable.
+
 ### 3. String incrementer (5kyu)
 
   :bell:  Task: [String incrementer](https://www.codewars.com/kata/54a91a4883a7de5d7800009c/train/ruby)
@@ -180,9 +226,10 @@ Now, we will go to solve the challenge.
 
   :arrow_right:  My solution: 
 
-  - The key to resolve this kata is just detect the even index and odd index of caracter.
-  - The method "each_with_index" will help us to do it.
-  - I use ".strip" to remove the space caracter in the last string
+  - Return "1" if input string is empty
+  - Split array to two parts: only last numbers and the first part
+  - With the last numbers, we will increase one and keep their same format
+  - Join the first part and the new numbers and we are the result
   
   ```ruby
   def increment_string(input)
@@ -214,15 +261,19 @@ Now, we will go to solve the challenge.
   ```
 
   You can see what the people can do, always one line of code. That's awesome!
-  I need to learn more about using the block code of the gsub.
+  To see that codes, we can learn more about a method ".succ" and ".next" and more about using the block code of the gsub like them.
 
-  This article is very short but I need to finish this article here. I don't have so much time to do more the others challenges today. See you in the next chapter.
+  This article may be very short for you but I need to finish this article here. I don't have so much time to do more the others challenges today. See you in the next chapter.
 
 
 
 ## Reference
 
 You can find the code in my github repository <i class="fab fa-github"></i> [Codeward Ruby](https://github.com/tienduy-nguyen/coding-challenge/tree/master/codewars-ruby)
+
+The Hacking Project website [thehackingproject.org](https://www.thehackingproject.org/)
+
+Codeware website [coderwars.com](https://codewars.com)
 
 ## Series Ruby Coding Challenges
 
@@ -231,6 +282,6 @@ You can find the code in my github repository <i class="fab fa-github"></i> [Cod
 3. [Ruby Coding Challenges with TheHackingProject - 03](/coding-challenges/ruby-codling-challenges-with-the-hacking-project-03)
 
 
-**The next challenges will be more instesting of this serie. Follow me to get the new update.**
+**Follow me to keep update this serie**
 
 {% include eof.md %}
