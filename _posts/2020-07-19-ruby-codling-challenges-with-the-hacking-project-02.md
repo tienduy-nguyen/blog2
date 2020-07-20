@@ -23,7 +23,7 @@ In [the last article](/coding-challenges/ruby-codling-challenges-with-the-hackin
 
 ### 1. Replace with alphabet position (6kyu)
 
-All the next challenges have given random by codewars.
+All the next challenges have distributed random by codewars.
 
   :bell:  Task: [Replace with alphabet position](https://www.codewars.com/kata/546f922b54af40e1e90001da/train/ruby)
 
@@ -131,7 +131,7 @@ All the next challenges have given random by codewars.
   ```
 
   You can see what the people can do, always one line of code. That's awesome!
-  I need to learn more about using the block code of the gsub.
+  I need to learn more about using the block code of the gsub like them.
 
   This article is very short but I need to finish this article here. I don't have so much time to do more the others challenges today. See you in the next chapter.
 
@@ -139,6 +139,10 @@ All the next challenges have given random by codewars.
 ## Reference
 
 You can find the code in my github repository <i class="fab fa-github"></i> [Codeward Ruby](https://github.com/tienduy-nguyen/coding-challenge/tree/master/codewars-ruby)
+
+The Hacking Project website [thehackingproject.org](https://www.thehackingproject.org/)
+
+Codeware website [coderwars.com](https://codewars.com)
 
 ## Series Ruby Coding Challenges
 
