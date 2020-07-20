@@ -345,13 +345,14 @@ For the first challenge, we will count the number of vowel in a given string.
   >To be a senior, a member must be at least 55 years old and have a handicap greater than 7. In this croquet club, handicaps range from -2 to +26; the better the player the lower the handicap.
 
   >Example input
+
   ```
   [[18, 20],[45, 2],[61, 12],[37, 6],[21, 21],[78, 9]]
   ```
   >Example output
+
   ```
   ["Open", "Open", "Senior", "Open", "Open", "Senior"]
-
   ```
 
   :arrow_right:  My solution: 
@@ -373,7 +374,7 @@ For the first challenge, we will count the number of vowel in a given string.
 
 ### 11. Find The Parity Outlier (6kyu)
 
-  I finish this first article in this serie with a kata challenge of 6ku.
+  For the last challenge, i will take an kata of 6kyu.
   It will be a little more complex of the previous challenges.
 
   :bell:  Task: [Find The Parity Outlier](https://www.codewars.com/kata/5526fc09a1bbd946250002dc)
@@ -419,6 +420,10 @@ For the first challenge, we will count the number of vowel in a given string.
 ## Reference
 
 You can find the code in my github repository <i class="fab fa-github"></i> [Codeward Ruby](https://github.com/tienduy-nguyen/coding-challenge/tree/master/codewars-ruby)
+
+The Hacking Project website [thehackingproject.org](https://www.thehackingproject.org/)
+
+Codeware website [coderwars.com](https://codewars.com)
 
 ## Series Ruby Coding Challenges
 
