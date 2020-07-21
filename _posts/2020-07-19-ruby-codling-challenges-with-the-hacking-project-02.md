@@ -12,7 +12,7 @@ tags:
   - Algorithms
   - Codewars
   - Kata
-  - 7kyu
+  - 6kyu
 ---
 
 Doing coding challenges is an excellent way to imporve your programming language & problem-solvings skills.
