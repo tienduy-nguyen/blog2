@@ -55,6 +55,8 @@ For the first challenge, we will count the number of vowel in a given string.
 
 > Return the number (count) of vowels in the given string. We will consider a, e, i, o, u as vowels for this Kata (but not y). The input string will only consist of lower case letters and/or spaces.
 
+---
+
 :arrow_right: My solution:
 
 I use the method **scan** of String. It allows us to interate through a string, and matching with a given pattern of regular expression. If you don't know regular expression yet, you can take a look on [Regular Expression Ruby](https://ruby-doc.org/core-2.5.1/Regexp.html).
@@ -68,6 +70,8 @@ def get_count(inputStr)
     # .scan: return new array which matching with the pattern
 end
 ```
+
+---
 
 :heavy_check_mark: Best solution on codewars
 
@@ -86,6 +90,8 @@ Another big advantage of codewars is learning to solve the problem from each oth
 > Given an array of integers, remove the smallest value. **Do not mutate the original array/list**. If there are multiple elements with the same value, remove the one with a lower index. If you get an empty array/list, return an empty array/list.
 > ex: remove_smallest([1,2,3,4,5]) = [2,3,4,5]
 
+---
+
 :arrow_right: My solution:
 
 - If the input array is empty, I will return an empty array
@@ -102,6 +108,8 @@ def remove_smallest(numbers)
   clone
 end
 ```
+
+---
 
 :heavy_check_mark: Best solution on codewars
 
@@ -121,6 +129,8 @@ Method "reject" is a reverse method of "select", we remove the items of array by
 > ex: Kata.getMiddle("test") should return "es"
 > ex:Kata.getMiddle("testing") should return "t"
 
+---
+
 :arrow_right: My solution:
 
 ```ruby
@@ -136,6 +146,8 @@ def get_middle(s)
   end
 end
 ```
+
+---
 
 :heavy_check_mark: Best solution on codewars
 
@@ -162,6 +174,8 @@ end
 > ex: Not Jaden-Cased: "How can mirrors be real if our eyes aren't real"
 > ex: Jaden-Cased: "How Can Mirrors Be Real If Our Eyes Aren't Real"
 
+---
+
 :arrow_right: My solution:
 
 This kata is quite simple, I just use the ".map" method and convert each word with "capitalize" method.
@@ -182,6 +196,8 @@ Finally, I got a first success on codewars, because I have the same solution wit
 
 > For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
 
+---
+
 :arrow_right: My solution:
 
 - The regular expression is very strong with string. So I will use it for this solution.
@@ -192,6 +208,8 @@ def disemvowel(str)
   str.gsub(/[aeiouAEIOU]/,'')
 end
 ```
+
+---
 
 :heavy_check_mark: Best solution on codewars
 
@@ -211,6 +229,8 @@ So they use a method "delete" more simple that I don't know yet. So cool!
 
 > For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
 
+---
+
 :arrow_right: My solution:
 
 - Using ".map" method to solve this problem
@@ -220,6 +240,8 @@ def square_digits num
   num.to_s.split('').map{|x| (x.to_i)**2}.join
 end
 ```
+
+---
 
 :heavy_check_mark: Best solution on codewars
 
@@ -245,6 +267,8 @@ I see that there are many ways to solve this problem. With Codewars, I can learn
 
 > For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
 
+---
+
 :arrow_right: My solution:
 
 - Using ".min_by" method
@@ -254,6 +278,8 @@ def find_short(s)
   return s.split.min_by{|word| word.length}.length
 end
 ```
+
+---
 
 :heavy_check_mark: Best solution on codewars
 
@@ -279,6 +305,8 @@ filter_list([1,'a','b',0,15]) == [1,0,15]
 filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
 ```
 
+---
+
 :arrow_right: My solution:
 
 ```ruby
@@ -286,6 +314,8 @@ def filter_list(l)
   return l.select{|item| item.is_a? Numeric}
 end
 ```
+
+---
 
 :heavy_check_mark: Best solution on codewars
 
@@ -315,6 +345,8 @@ maskify('Nananananananananananananananana Batman!') # should return '###########
 
 ```
 
+---
+
 :arrow_right: My solution:
 
 - I keep only 4 last caracters of string, and add the "#" (string.length-4) times in the first.
@@ -324,6 +356,8 @@ def maskify(cc)
   return cc.length <= 4 ? cc : ('#' * (cc.length-4)) + cc[cc.length-4..cc.length-1]
 end
 ```
+
+---
 
 :heavy_check_mark: Best solution on codewars
 
@@ -361,6 +395,8 @@ Very easy to read the code with the best solutions on codewars.
 ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 ```
 
+---
+
 :arrow_right: My solution:
 
 - The method ".map" is again take the job done
@@ -370,6 +406,8 @@ def open_or_senior(data)
   return data.map{|person| (person[0]>=55 && person[1]>7) ? "Senior": "Open"}
 end
 ```
+
+---
 
 :heavy_check_mark: Best solution on codewars
 
@@ -399,6 +437,8 @@ Should return: 160 (the only even number)
 
 ```
 
+---
+
 :arrow_right: My solution:
 
 - Because our array contains an unique even number or odd number. So I will check 3 first items in array. If it contains 2 and more even number, so the number that we need to find is a odd number, and vice versa.
@@ -410,6 +450,8 @@ def maskify(cc)
   return is_all_even ? integers.select{|x| x%2 != 0}[0] : integers.select{|x| x%2 == 0}[0]
 end
 ```
+
+---
 
 :heavy_check_mark: Best solution on codewars
 

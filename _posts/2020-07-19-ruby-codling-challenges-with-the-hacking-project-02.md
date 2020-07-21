@@ -42,6 +42,8 @@ Should return
 Should return "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11" (as a string)
 ```
 
+---
+
 :arrow_right: My solution:
 
 - This challenge is always handle with the string
@@ -53,6 +55,8 @@ def alphabet_position(text)
   text.bytes.map{|x| x-96}.join(' ')
 end
 ```
+
+---
 
 :heavy_check_mark: Best solution on codewars
 
@@ -77,6 +81,8 @@ For example
 array_diff([1,2],[1]) == [2]
 array_diff([1,2],[1]) == [2]
 ```
+
+---
 
 :arrow_right: My solution:
 
@@ -115,6 +121,8 @@ weirdcase( "String" )#=> returns "StRiNg"
 weirdcase( "Weird string case" );#=> returns "WeIrD StRiNg CaSe"
 ```
 
+---
+
 :arrow_right: My solution:
 
 - The key to resolve this kata is just detect the even index and odd index of caracter.
@@ -130,6 +138,8 @@ def weirdcase string
   return result.strip
 end
 ```
+
+---
 
 :heavy_check_mark: Best solution on codewars
 
