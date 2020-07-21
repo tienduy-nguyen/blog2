@@ -442,6 +442,6 @@ Codeware website [coderwars.com](https://codewars.com)
 2. [Ruby Coding Challenges with TheHackingProject - 02](/blog/coding-challenges/ruby-codling-challenges-with-the-hacking-project-02)
 3. [Ruby Coding Challenges with TheHackingProject - 03](/blog/coding-challenges/ruby-codling-challenges-with-the-hacking-project-03)
 
-**I hope you like this serie. The next challenges will be so much more instesting of this serie. Follow me to get the new update.**
+**I hope you like this serie. The next challenges will be so much more instesting. Follow me to get the new update.**
 
 {% include eof.md %}
