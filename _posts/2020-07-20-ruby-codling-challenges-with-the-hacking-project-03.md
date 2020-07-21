@@ -42,6 +42,8 @@ For example
 "Grfg" == rot13("Test")
 ```
 
+---
+
 :arrow_right: My solution:
 
 - It becomes more complicated with the 5kyu level. I take me more time to reach the best solution what I can.
@@ -63,6 +65,8 @@ def rot13(str)
   return str_ascii.map(&:chr).join
 end
 ```
+
+---
 
 :heavy_check_mark: Best solution on codewars
 
@@ -111,6 +115,8 @@ Throw       Score
 1 1 1 3 1   1100: 1000 (for three 1s) + 100 (for the other 1)
 2 4 4 5 4   450:  400 (for three 4s) + 50 (for the 5)
 ```
+
+---
 
 :arrow_right: My solution:
 
@@ -167,6 +173,8 @@ def score(dice)
 end
 
 ```
+
+---
 
 :heavy_check_mark: Best solution on codewars
 
@@ -235,6 +243,8 @@ foo9 -> foo10
 foo099 -> foo100
 ```
 
+---
+
 :arrow_right: My solution:
 
 - Return "1" if input string is empty
@@ -253,6 +263,8 @@ def increment_string(input)
   return arr[0]+new_num
 end
 ```
+
+---
 
 :heavy_check_mark: Best solution on codewars
 
