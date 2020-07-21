@@ -2,8 +2,8 @@
 layout: single
 header:
   teaser: /assets/images/teasers/ruby.png
-title: 'Ruby Coding Challenges with TheHackingProject - 03'
-date: 2020-07-20 09:00:00 +0200
+title: 'Ruby Coding Challenges with TheHackingProject - 04'
+date: 2020-07-21 09:00:00 +0200
 categories: Coding-Challenges
 tags:
   - Ruby
@@ -12,14 +12,20 @@ tags:
   - Algorithms
   - Codewars
   - Kata
-  - 7kyu
+  - 5kyu
+  - 6kyu
+  - OOP
 ---
 
-Doing coding challenges is an excellent way to imporve your programming language & problem-solvings skills.
+Object Oriented Programming Challenges.
 
 ## Kata challenges
 
-After taking some challenges, I realise the more difficult to solve problem, it's is not only find a solution. We mus
+After completed some challenges, I realise the more difficult to solve problem, it's is not only to find a solution. I need to find a better solution that is shorter, faster and easy to understand.
+
+This week with THP, we start learning the the Object Oriented Programming (OOP) in Ruby. OOP is a part very important that is a programming philosopy where we manipulate data as objects.
+
+So, today I will take only the katas of this subject to improve my knowleages and my skills in this part.
 
 ### 1. Rot13 (5kyu)
 
@@ -77,9 +83,6 @@ def rot13(string)
   string.tr(origin, cipher)
 end
 ```
-
-Oh la la, how smart are they!!!
-I don't think the people can have a lot of super clever idea to resolve this challenge like that.
 
 ## Reference
 
