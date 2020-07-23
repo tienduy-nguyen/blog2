@@ -13,7 +13,7 @@ tags:
 
 Some tips you probably don't know in Ruby.
 
-_I'am learning and trying to improve my English. So I'm really sorry if my grammar mistakes annoy you. Thank you for your understanding._
+<sub>_I'am learning and trying to improve my English. So I'm really sorry if my grammar mistakes annoy you. Thank you for your understanding._</sub>
 
 ## Assigning the rest of an array to a variable
 

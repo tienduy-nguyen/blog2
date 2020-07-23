@@ -1,7 +1,7 @@
 ---
 layout: single
 header:
-  teaser: /assets/images/teasers/ruby-challenge-350.png
+  teaser: /assets/images/teasers/ruby-challenge.png
 title: 'Ruby Coding Challenges with TheHackingProject - 03'
 date: 2020-07-20 09:00:00 +0200
 categories: Coding-Challenges
@@ -17,7 +17,7 @@ tags:
 
 Doing coding challenges is an excellent way to imporve your programming language & problem-solvings skills.
 
-_I'am learning and trying to improve my English. So I'm really sorry if my grammar mistakes annoy you. Thank you for your understanding._
+<sub>_I'am learning and trying to improve my English. So I'm really sorry if my grammar mistakes annoy you. Thank you for your understanding._</sub>
 
 ## Kata challenges
 
@@ -306,7 +306,5 @@ Codeware website [coderwars.com](https://codewars.com)
 1. [Ruby Coding Challenges with TheHackingProject - 01](/blog/coding-challenges/ruby-codling-challenges-with-the-hacking-project-01)
 2. [Ruby Coding Challenges with TheHackingProject - 02](/blog/coding-challenges/ruby-codling-challenges-with-the-hacking-project-02)
 3. [Ruby Coding Challenges with TheHackingProject - 03](/blog/coding-challenges/ruby-codling-challenges-with-the-hacking-project-03)
-
-**Follow me to keep update this serie**
 
 {% include eof.md %}
