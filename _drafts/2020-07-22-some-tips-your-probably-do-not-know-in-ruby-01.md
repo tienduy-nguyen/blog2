@@ -9,11 +9,11 @@ tags:
   - Ruby
   - Tips
   - Tricks
-
 ---
 
 Some tips you probably don't know in Ruby.
 
+_I'am learning and trying to improve my English. So I'm really sorry if my grammar mistakes annoy you. Thank you for your understanding._
 
 ## Assigning the rest of an array to a variable
 
@@ -27,7 +27,9 @@ When destructuring an array, you can unpack and assign the remaining part of it 
   rest # => [2, 3]
   a    # => [1, 2, 3]
 ```
+
 ## Word Array
+
 When we want to add a seperator in the string
 
 ```ruby
@@ -79,7 +81,6 @@ end
 
 When we copy an object that contains others objects inside, array for example, you only copy references to those objects
 
-
 ```ruby
 food = %w( bread milk orange )
 food.map(&:object_id)
@@ -95,6 +96,7 @@ def deep_copy(obj)
   Marshal.load(Marshal.dump(obj))
 end
 ```
+
 See the result
 
 ```
@@ -107,11 +109,14 @@ ObjectSpace.each_object(String).select{|x| x == food.first}.count
 => 56
 
 ```
+
 **Bonus**: Difference between <code>clone</code> and <code>dup</code>(They are almost the same, but there are two points that **dup** doesn't have)
+
 - Clone also singleton class of copied object
 - Keep the frozen state of copied object
 
 For example
+
 - Singleton methods
   ```ruby
   a = Object.new
@@ -139,11 +144,12 @@ For example
   p c.frozen?
   => true
   ```
+
 ## The different ways to call lambda
 
 ```ruby
 my_lambda = -> { puts 'Hello' }
- 
+
 my_lambda.call
 my_lambda[]
 my_lambda.()
@@ -158,6 +164,7 @@ Array.new(10) { rand 300 }
 ```
 
 It will create an array with 10 item that have the random values from 0 to 299
+
 # Reference
 
 [codehub.vn]()

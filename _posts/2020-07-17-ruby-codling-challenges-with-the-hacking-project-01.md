@@ -17,6 +17,8 @@ tags:
 
 Doing coding challenges is an excellent way to imporve your programming language & problem-solvings skills.
 
+_I'am learning and trying to improve my English. So I'm really sorry if my grammar mistakes annoy you. Thank you for your understanding._
+
 ## The Hacking Project (THP)
 
 _You may be asking: "What is The Hacking Project?"_

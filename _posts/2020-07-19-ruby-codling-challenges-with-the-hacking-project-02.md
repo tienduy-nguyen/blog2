@@ -17,6 +17,8 @@ tags:
 
 Doing coding challenges is an excellent way to imporve your programming language & problem-solvings skills.
 
+_I'am learning and trying to improve my English. So I'm really sorry if my grammar mistakes annoy you. Thank you for your understanding._
+
 ## Kata challenges
 
 In [the last article](/coding-challenges/ruby-codling-challenges-with-the-hacking-project-01/), we have done the very simple challenges. Now we will challenge in the next level with the 6kyu challenges.

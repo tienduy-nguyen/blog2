@@ -19,6 +19,8 @@ tags:
 
 Object Oriented Programming Challenges.
 
+_I'am learning and trying to improve my English. So I'm really sorry if my grammar mistakes annoy you. Thank you for your understanding._
+
 ## Kata challenges
 
 After completed some challenges, I realise the more difficult to solve problem, it's is not only to find a solution. I need to find a better solution that is shorter, faster and easy to understand.

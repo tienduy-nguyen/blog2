@@ -17,6 +17,8 @@ tags:
 
 Doing coding challenges is an excellent way to imporve your programming language & problem-solvings skills.
 
+_I'am learning and trying to improve my English. So I'm really sorry if my grammar mistakes annoy you. Thank you for your understanding._
+
 ## Kata challenges
 
 My level on codewars now is 5kyu. You can check my [Codewars](https://www.codewars.com/users/tienduy-nguyen). So, today when I take the new challenges with the option rank up, Codewars gave me only the 5kyu challenges.
