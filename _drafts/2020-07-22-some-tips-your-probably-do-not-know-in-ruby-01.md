@@ -1,6 +1,7 @@
 ---
 layout: single
 header:
+  image: /assets/imgages/headers/skate.png
   teaser: /assets/images/teasers/ruby.png
 title: 'Better In Ruby - 01'
 date: 2020-07-22 09:00:00 +0100

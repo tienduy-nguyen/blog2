@@ -1,6 +1,7 @@
 ---
 layout: single
 header:
+  overlay_image: /assets/images/headers/challenge.png
   teaser: /assets/images/teasers/ruby-challenge.png
 title: 'Ruby Coding Challenges with TheHackingProject - 01'
 date: 2020-07-17 09:00:00 -0800
